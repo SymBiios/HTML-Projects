@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire Planque Julien</title>
+</head>
+
+<body>
+
+    <h1>Formulaire</h1>
+     
+    <form action="#" method="post">
+
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" placeholder="Prénom" required>
+        <br><br>
+
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" placeholder="Nom" required>
+
+        <br><br>
+
+        <label for="age">Âge:</label>
+        <input type="number" id="age" placeholder="Age" required>
+
+        <br><br>
+
+        <label>Sexe:</label>
+        <input type="radio" id="sexe-m" name="sexe" value="Masculin" required>
+        <label for="sexe-m">Masculin</label>
+        <input type="radio" id="sexe-f" name="sexe" value="Féminin">
+        <label for="sexe-f">Féminin</label>
+
+        <br><br>
+
+        <label for="email">Adresse Mail:</label>
+        <input type="email" id="email" name="email" placeholder="emile.tartine@beurre.com" required>
+
+        <br><br>
+
+        <label for="adresse">Adresse postale:</label>
+        <input type="text" id="adresse" name="adresse" required>
+
+        <br><br>
+
+        <label for="code-postal">Code postal:</label>
+        <input type="text" id="code-postal" name="code-postal" pattern="^\d{5}$" title="Entrer un nombre à 5 chiffres" required>
+
+        <br><br>
+
+        <label for="ville">Ville:</label>
+        <input type="text" id="ville" name="ville" required>
+
+        <br><br>
+
+        <label for="metier">Métier exercé:</label>
+        <select id="metier" name="metier" required>
+            <option value="" disabled selected>Choisis votre métier</option>
+            <option value="psychologue-pour-plantes">Psychologue pour Plantes</option>
+            <option value="eleveur-de-moutons">Eleveur de moutons</option>
+            <option value="consultant-en-procrastination">Consultant en Procrastination</option>
+            <option value="responsable-des-câlins">Responsable des câlins</option>
+            <option value="conseiller-en-grasse-matinée">Conseiller en grasse matinée</option>
+            <option value="expert-en-casse-tete-non-résolues">Expert en casse-têtes non résolus</option>
+            <option value="coordinateur-de-ennui">Coordinateur de l’ennui</option>
+            <option value="specialiste-en-rangement-espace-propre">Spécialiste en rangement d'espace propre</option>
+            <option value="expert-de-echec-reussi">Expert de l'échec réussi</option>
+        </select>
+            
+
+        <br><br>
+
+        <label for="nationalite">Nationalité:</label>
+        <select id="nationalite" name="nationalite" required>
+            <option value="" disabled hidden>Choisissez une nationalité</option>
+            <option value="fr" selected>Française</option>
+            <option value="be">Belge</option>
+            <option value="de">Allemande</option>
+            <option value="es">Espagnole</option>
+            <option value="it">Italienne</option>
+            <option value="ch">Suisse</option>
+            <option value="other">Autre</option> <!-- Choix "Autre" -->
+        </select>
+        
+
+        <br><br>
+
+        <label for="birth">Date de naissance:</label>
+        <input type="date" id="birth" name="birth" required>
+
+        <br><br>
+
+        <label for="pays_naissance">Pays de naissance:</label>
+        <input type="text" id="pays_naissance" name="pays_naissance" required>
+
+        <br><br>
+
+        <label for="secu_social">Numéro de sécurité sociale:</label>
+        <input type="text" id="secu_social" name="secu_social" pattern="^\d{15}$" title="Entrer un numéro à 15 chiffres" required>
+
+        <br><br>
+
+        <label for="num_passeport">Numéro de passeport:</label>
+        <input type="text" id="num_passeport" name="num_passeport" pattern="^\d{9}$" required title="Entrer un numéro à 9 chiffres">
+
+        <br><br>
+
+        <label for="delivrance_passeport">Date de délivrance du passeport:</label>
+        <input type="date" id="delivrance_passeport" name="delivrance_passeport" required>
+
+        <br><br>
+
+        <label for="validite_passeport">Date de validité du passeport:</label>
+        <input type="date" id="validite_passeport" name="validite_passeport" required>
+
+        <br><br>
+
+        <button type="submit">Soumettre</button>
+
+    </form>
+
+</body>
+</html>
